@@ -1,1 +1,1 @@
-# barbershop.github.io
+# barbershop
