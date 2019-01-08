@@ -1,4 +1,277 @@
-body{
-	background: black;
-	color:white;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
+
+.hidden {
+  position: absolute;
+  clip:rect(0 0 0 0);
+}
+
+body,
+.button {
+  /*типографика*/
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+body {
+  /*оформление*/
+  background: #000000 url("../img/index-bg.jpg") no-repeat;
+}
+
+.button {
+  /**/
+  display: inline-block;
+  /*оформление*/
+  background: black;
+}
+ul {
+  margin:0;
+  padding:0;
+  list-style:0;
+}
+
+a {
+  text-decoration:none;
+
+  color:#ffffff;
+}
+
+.site-nav-item a,
+.user-nav-item a {
+  /*typography*/
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+.advantages-item h3,
+.news-title,
+.gallery-title,
+.contacts-title,
+.booking-title,
+.modal-login-title {
+  font-size: 30px;
+  line-height: 42px;
+
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  background: red;
+  padding: 50px;
+
+
+
+
+}
+
+.header-nav {
+
+}
+
+.header-nav-logo {
+
+
+}
+
+.site-nav {
+
+}
+
+.site-nav-item {
+
+}
+
+.user-nav {
+
+}
+
+.user-nav-item {
+
+}
+
+/* main */
+
+/* advantages section */
+
+.advanteges-list {
+
+}
+
+.advantages-item {
+
+}
+
+.advantages-item h3 {
+
+}
+
+.advantages-item p {
+
+}
+
+/* news section */
+
+.news {
+
+}
+
+.news-title {
+
+}
+
+.news-list {
+
+}
+
+.news-item {
+
+}
+
+.news-item-text {
+
+}
+
+.news-item-data {
+  text-transform: none;
+}
+
+/* gallery section */
+
+.gallery {
+
+}
+
+.gallery-title {
+
+}
+
+.gallery-image {
+
+}
+
+.gallery-nav {
+
+}
+
+.gallery-nav-item {
+
+}
+
+.gallery-nav-item-prev,
+.gallery-nav-item-next {
+
+}
+
+/* contacts section */
+
+.contacts {
+
+}
+
+.contacts-title {
+
+}
+
+.contacts-nav {
+
+}
+
+.contacts-nav-item {
+
+}
+
+.contacts-nav-map {
+
+}
+
+.contacts-nav-mail {
+
+}
+
+/* booking section */
+
+.booking {
+
+}
+
+.booking-title {
+
+}
+
+.booking-text {
+
+}
+
+.booking-form {
+
+}
+
+/* footer */
+
+.footer-contacts {
+
+}
+
+.footer-contacts-map {
+
+}
+
+.footer-social {
+
+}
+
+.footer-social-title {
+
+}
+
+.footer-social-list {
+
+}
+
+.footer-social-item {
+
+}
+
+.footer-development {
+
+}
+
+.modal {
+
+}
+
+.modal-login {
+
+}
+
+.modal-login-form {
+
+}
+
+.modal-login-name {
+
+}
+
+.modal-login-password {
+
+}
+
+.modal-login-submit {
+
+}
+
+.modal-close {
+
+}
+
