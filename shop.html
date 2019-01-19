@@ -2,14 +2,15 @@
 <html lang="ru">
 <meta charset="utf-8">
 <head>
-	<title>Каталог</title>
+	<title>Магазин</title>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/catalog.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
 </head>
-<body>
-	<header>
-		<nav class="header-nav">
+<body class="shop">
+	<header class="aligner-middle">
+		<nav class="header-nav aligner-small">
 			<a class="header-nav-logo" href="index.html">
 				<img src="img/logo-catalog.png" alt="Логотип Барбершопа Бородинский">
 			</a>
@@ -25,8 +26,8 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class="align-wrapper">
+	<main class="aligner-middle">
+		<div class="aligner-small">
 			<h1 class="main-title">Средства для ухода</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item breadcrumbs-parent">
@@ -44,14 +45,54 @@
 					<h2 class="hidden">Фильтр товаров</h2>
 					<form>
 						<div class="filter-brand">
-							<title class="filter-brand-title">производители</title>
+							<h3 class="filter-brand-title">производители:</h3>
 							<ul class="filter-brand-list">
 								<li class="filter-brand-item">
-									<input type="checkbox" name="">
-									
+									<input class="hidden" type="checkbox" name="baxter" id="baxter" checked>
+									<label for="baxter">baxter of california</label>
+								</li>
+								<li class="filter-brand-item">
+									<input class="hidden" type="checkbox" name="natty" id="natty">
+									<label for="natty">mr natty</label>
+								</li>
+								<li class="filter-brand-item">
+									<input class="hidden" type="checkbox" name="suavecito" id="suavecito" checked>
+									<label for="suavecito">suavecito</label>
+								</li>
+								<li class="filter-brand-item">
+									<input class="hidden" type="checkbox" name="malin-goetz" id="malin-goetz">
+									<label for="malin-goetz">malin-goetz</label>
+								</li>
+								<li class="filter-brand-item">
+									<input class="hidden" type="checkbox" name="murrays" id="murrays">
+									<label for="murrays">murrays</label>
+								</li>
+								<li class="filter-brand-item">
+									<input class="hidden" type="checkbox" name="american-crew" id="american-crew" checked>
+									<label for="american-crew">american crew</label>
 								</li>
 							</ul>
 						</div>
+						<div class="filter-group">
+							<h3 class="filter-group-title">
+								группы товаров:
+							</h3>
+							<ul class="filter-group-list">
+								<li class="filter-group-item">
+									<input class="hidden" type="radio" name="product-group" id="shavor">
+									<label for="shavor">бритвенные принадлежности</label>
+								</li>
+								<li class="filter-group-item">
+									<input class="hidden" type="radio" name="product-group" id="care-products">
+									<label for="care-products">средства для ухода</label>
+								</li>
+								<li class="filter-group-item">
+									<input class="hidden" type="radio" name="product-group" id="accessories">
+									<label for="accessories">аксессуары</label>
+								</li>
+							</ul>
+						</div>
+						<button class="filter-submit button" type="submit">показать</button>
 					</form>
 				</section>
 				<section class="catalog">
@@ -65,9 +106,9 @@
 									<span class="catalog-item-name">"Baxter of California"</span>
 								</a>
 							</h3>
-							<p>
+							<p class="catalog-item-container">
 								<span class="catalog-item-price">2 900</span>
-								<a href="#" class="catalog-item-buy">Купить</a>
+								<a href="#" class="button">Купить</a>
 							</p>
 						</li>
 						<li class="catalog-item">
@@ -78,9 +119,9 @@
 									<span class="catalog-item-name">"Baxter of California"</span>
 								</a>
 							</h3>
-							<p>
+							<p class="catalog-item-container">
 								<span class="catalog-item-price">750</span>
-								<a href="#" class="catalog-item-buy">Купить</a>
+								<a href="#" class="button">Купить</a>
 							</p>
 						</li>
 						<li class="catalog-item">
@@ -91,9 +132,9 @@
 									<span class="catalog-item-name">"suavecito"</span>
 								</a>
 							</h3>
-							<p>
+							<p class="catalog-item-container">
 								<span class="catalog-item-price">290</span>
-								<a href="#" class="catalog-item-buy">Купить</a>
+								<a href="#" class="button">Купить</a>
 							</p>
 						</li>
 						<li class="catalog-item">
@@ -104,9 +145,9 @@
 									<span class="catalog-item-name">"american crew"</span>
 								</a>
 							</h3>
-							<p>
+							<p class="catalog-item-container">
 								<span class="catalog-item-price">500</span>
-								<a href="#" class="catalog-item-buy">Купить</a>
+								<a href="#" class="button">Купить</a>
 							</p>
 						</li>
 						<li class="catalog-item">
@@ -117,9 +158,11 @@
 									<span class="catalog-item-name">"american crew"</span>
 								</a>
 							</h3>
-							<p>
-								<span class="catalog-item-price"></span>
-								<a href="#" class="catalog-item-buy">Купить</a>
+							<p class="catalog-item-container">
+								<span class="catalog-item-price">
+									300
+								</span>
+								<a href="#" class="button">Купить</a>
 							</p>
 						</li>
 						<li class="catalog-item">
@@ -130,63 +173,52 @@
 									<span class="catalog-item-name">"baxter of california"</span>
 								</a>
 							</h3>
-							<p>
+							<p class="catalog-item-container">
 								<span class="catalog-item-price">3900</span>
-								<a href="#" class="catalog-item-buy">Купить</a>
+								<a href="#" class="button">Купить</a>
 							</p>
 						</li>
 					</ul>
 					<ul class="pagination">
-						<li class="pagination-item"><a href="#">1</a></li>
-						<li class="pagination-item pagination-item-active"><a>2</a></li>
-						<li class="pagination-item"><a href="#">3</a></li>
-						<li class="pagination-item"><a href="#">4</a></li>
+						<li class="pagination-item"><a class="button" href="#">1</a></li>
+						<li class="pagination-item pagination-item-active"><a class="button">2</a></li>
+						<li class="pagination-item"><a class="button" href="#">3</a></li>
+						<li class="pagination-item"><a class="button" href="#">4</a></li>
 					</ul>
 				</section>
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="align-wrapper">
+	<footer class="aligner-middle">
+		<div class="aligner-small">
 			<p class="footer-contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 				<a class="footer-contacts-map" href="#">Как нас найти?</a><br>
 				Телефон: +7 (812) 666-02-66
 			</p>
-			<div class="social">
-				<h2 class="social-title">давайте дружить!</h2>
-				<ul class="social-list">
-					<li class="social-list-item">
-						<a href="#"></a>
+			<div class="footer-social">
+				<h2 class="footer-social-title">давайте дружить!</h2>
+				<ul class="footer-social-list">
+					<li class="footer-social-item">
+						<a href="#" aria-label="вконтакте">
+
+						</a>
 					</li>
-					<li class="social-list-item">
-						<a href="#"></a>
+					<li class="footer-social-item">
+						<a href="#" aria-label="фейсбук"></a>
 					</li>
-					<li class="social-list-item">
-						<a href="#"></a>
+					<li class="footer-social-item">
+						<a href="#" aria-label="инстаграмм"></a>
 					</li>
 				</ul>
 			</div>
-			<p class="development">
+			<p class="footer-development">
 				<span>Разработано:</span>
-				<a href="#">html academy</a>
+				<a class="button" href="#">html academy</a>
 			</p>
 		</div>
 	</footer>
-	<section class="modal modal-login">
-		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>
-		<form class="modal-login-form">
-			<input type="text" class="modal-login-name">
-			<input type="password" class="modal-login-password">
-			<button type="submit" class="modal-login-submit">Войти</button>
-		</form>
-	</section>
-	<section class="modal modal-modal-map">
-		<h2 class="hidden">как до нас добраться</h2>
-		<span class="modal-close">x</span>
-	</section>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

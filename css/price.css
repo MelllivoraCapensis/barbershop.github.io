@@ -1,0 +1,90 @@
+.slogan {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 60px;
+    
+	font-size: 48px;
+	line-height: 60px;
+	text-align: center;
+	word-wrap: wrap;
+}
+
+.slogan:before,
+.slogan:after {
+  flex-grow: 1;
+  width: 50px;
+  height: 3px;
+
+  background: #000000;
+  content: "";
+}
+
+.slogan:before {
+	margin-right: 10px;
+}
+
+.slogan:after {
+	margin-left: 10px;
+}
+
+.columns-wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.brands,
+.price {
+	width: 49%;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+.brands-title,
+.price-title,
+.description-title {
+	width: 240px;
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: 24px;
+}
+
+.description p {
+  max-width: 380px;
+  margin: 0;
+  margin-right: 
+}
+
+.price-title {
+	width: 180px;
+}
+
+.price-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+
+.price td {
+  width: 50%;
+  border: 2px solid black;
+}
+
+.price td:nth-of-type(2n+1) {
+	text-align: left;
+}
+
+.price td:nth-of-type(2n) {
+	text-align: center;
+}
+
+.column-left,
+.column-right {
+	width: 50%;
+}

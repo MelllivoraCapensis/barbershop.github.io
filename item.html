@@ -2,14 +2,15 @@
 <html lang="ru">
 <meta charset="utf-8">
 <head>
-	<title>Каталог</title>
+	<title>Товар</title>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/item.css">
 </head>
-<body class="catalog-item">
-	<header>
-		<nav class="header-nav">
+<body class="item">
+	<header class="aligner-middle">
+		<nav class="header-nav aligner-small">
 			<a class="header-nav-logo" href="index.html">
 				<img src="img/logo-catalog.png" alt="Логотип Барбершопа Бородинский">
 			</a>
@@ -21,12 +22,12 @@
 				<li class="site-nav-item"><a href="#">контакты</a></li>
 			</ul>
 			<ul class="user-nav">
-				<li class="user-nav-item"><a href="#">вход</a></li>
+				<li class="user-nav-item" id="office-enter"><a href="#">вход</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class="align-wrapper">
+	<main class="aligner-middle">
+		<div class="aligner-small">
 			<h1 class="main-title">Набор для путешествий «Baxter of California»</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item breadcrumbs-parent">
@@ -48,7 +49,7 @@
 					<img src="img/product-main-image.png" class="photos-main">
 					<ul class="photos-list">
 						<li class="photos-item photos-item-current">
-							<img src="img/product-image.png">
+							<img src="img/product-image-1.png">
 						</li>
 						<li class="photos-item">
 							<img src="img/product-image-2.png">
@@ -69,24 +70,24 @@
 					</p>
 					<p class="description-price">
 						<span class="description-price-number">2900</span>
-						<span class="description-price-buy"><a href="#">Купить</a></span>
+						<a class="button" href="#">Купить</a>
 					</p>
 					<div class="description-composition">
-						<p class="description-composition-title">в набор входят</p>
+						<p class="description-composition-title">в набор входят:</p>
 						<ul class="description-composition-list">
-							<li class="description-composition-list-item">
+							<li class="description-composition-item">
 								Средство для умывания (50 мл)
 							</li>
-							<li class="description-composition-list-item">
+							<li class="description-composition-item">
 								Увлажняющий крем (50 мл)
 							</li>
-							<li class="description-composition-list-item">
+							<li class="description-composition-item">
 								Крем для бритья (50 мл)
 							</li>
-							<li class="description-composition-list-item">
+							<li class="description-composition-item">
 								Крем после бритья, шампунь (50 мл)
 							</li>
-							<li class="description-composition-list-item">
+							<li class="description-composition-item">
 								Удобная кожаная косметичка
 							</li>
 						</ul>
@@ -95,47 +96,61 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="align-wrapper">
+	<footer class="aligner-middle">
+		<div class="aligner-small">
 			<p class="footer-contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 				<a class="footer-contacts-map" href="#">Как нас найти?</a><br>
 				Телефон: +7 (812) 666-02-66
 			</p>
-			<div class="social">
-				<h2 class="social-title">давайте дружить!</h2>
-				<ul class="social-list">
-					<li class="social-list-item">
-						<a href="#"></a>
+			<div class="footer-social">
+				<h2 class="footer-social-title">давайте дружить!</h2>
+				<ul class="footer-social-list">
+					<li class="footer-social-item">
+						<a href="#" aria-label="вконтакте">
+
+						</a>
 					</li>
-					<li class="social-list-item">
-						<a href="#"></a>
+					<li class="footer-social-item">
+						<a href="#" aria-label="фейсбук"></a>
 					</li>
-					<li class="social-list-item">
-						<a href="#"></a>
+					<li class="footer-social-item">
+						<a href="#" aria-label="инстаграмм"></a>
 					</li>
 				</ul>
 			</div>
-			<p class="development">
+			<p class="footer-development">
 				<span>Разработано:</span>
-				<a href="#">html academy</a>
+				<a class="button" href="#">html academy</a>
 			</p>
 		</div>
 	</footer>
-	<section class="modal modal-login">
-		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>
-		<form class="modal-login-form">
-			<input type="text" class="modal-login-name">
-			<input type="password" class="modal-login-password">
-			<button type="submit" class="modal-login-submit">Войти</button>
-		</form>
-	</section>
-	<section class="modal modal-modal-map">
-		<h2 class="hidden">как до нас добраться</h2>
-		<span class="modal-close">x</span>
-	</section>
+	<section class="modal office">
+		<h2 class="office-title">Личный кабинет</h2>
+		<p class="office-text">Введите свой логин и пароль</p>
+		<form class="office-form" action="https://echo.htmlacademy.ru" method="POST">
+			<label for="office-login" class="hidden">Имя</label>
+			<input class="office-field" type="text"  id="office-login" name="office-login" placeholder="логин">
+			<label for="office-password" class="hidden">Пароль</label>
+			<input class="office-field" type="password" id="office-password" name="office-password" placeholder="пароль">
+			<div class="office-columns">
+				<input class="hidden office-remember-box" id="office-remember-box" type="checkbox" name="office-remember-box">
+				<label class="office-remember-label" for="office-remember-box">запомните меня</label>
+				<a class="office-forget" href="#">я забыл пароль!</a></div>
+				<label class="hidden" for="office-submit">Войти</label>
+				<button class="office-submit button" type="submit" id="office-submit">Войти</button>
+			</form>
+			<label class="hidden" for="office-close">Закрыть</label>
+			<button id="office-close" class="modal-close" type="button"></button>
+		</section>
+	    <div class="modal-mask"></div>
+		<section class="modal map">
+			<h2 class="hidden">как до нас добраться</h2>
+			<label class="hidden" for="office-close">Закрыть</label>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2432.0965266718176!2d30.992364615767716!3d52.441166179799325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sby!4v1547803600515" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<button id="map-close" class="modal-close" type="button"></button>
+		</section>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
